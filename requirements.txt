@@ -1,0 +1,9 @@
+# --- API ---
+fastapi>=0.111,<1.0
+uvicorn[standard]>=0.30,<0.31
+python-multipart>=0.0.9,<0.0.10   # for file uploads
+
+# --- LangChain core + loaders/splitters ---
+langchain>=0.2,<0.3
+langchain-community>=0.2,<0.3
+langchain-text-splitters>=0.2,<0.3
