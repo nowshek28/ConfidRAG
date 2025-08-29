@@ -28,7 +28,4 @@ Support for additional sources (URLs, PDFs, etc.).
 
 Optional LLM integration for full RAG answers.
 
-⚠️ Note
 
-This repository is still under active development and the features, code structure, and requirements will evolve.
-The README will be updated step by step as new components are added.
