@@ -1,51 +1,71 @@
 import streamlit as st
 
-st.set_page_config(page_title="Basic Layout", layout="wide")
+st.set_page_config(page_title="Nested Layout", layout="wide")
 
 # ---------- Session State ----------
 if "list_items" not in st.session_state:
     st.session_state.list_items = []
-if "text5_value" not in st.session_state:
-    st.session_state.text5_value = ""
+if "chat_item" not in st.session_state:
+    st.session_state.chat_item = []
+if "Input_value" not in st.session_state:
+    st.session_state.Input_value = ""
+if "ask_value" not in st.session_state:
+    st.session_state.ask_value = ""
 
-# Functions
+# ---------- Functions ----------
 def add_item(prefix, value):
     if value:
         st.session_state.list_items.append(f"{prefix}: {value}")
 
+def add_chat(prefix, value):
+    if value:
+        st.session_state.chat_item.append(f"{prefix}: {value}")
+
 # ---------- LAYOUT ----------
-col1, col2 = st.columns([1, 3])
+col1, col2 = st.columns([1, 3], gap="large")
 
 with col1:
-    # Buttons TEXT1–TEXT3
-    if st.button("TEXT1"):
-        val = st.text_input("Enter value for TEXT1", key="text1")
-        if val:
-            add_item("TEXT1", val)
+    st.session_state.Input_value = st.text_input("Enter Here:", value=st.session_state.Input_value)
+    if st.button(".txt file"):
+        add_item("txt_file", st.session_state.Input_value)
+        st.session_state.Input_value = ""
+    if st.button(".txt folder"):
+        add_item("txt_folder", st.session_state.Input_value)
+        st.session_state.Input_value = ""
+    if st.button("url upload"):
+        add_item("url_upload", st.session_state.Input_value)
+        st.session_state.Input_value = ""
 
-    if st.button("TEXT2"):
-        val = st.text_input("Enter value for TEXT2", key="text2")
-        if val:
-            add_item("TEXT2", val)
-
-    if st.button("TEXT3"):
-        val = st.text_input("Enter value for TEXT3", key="text3")
-        if val:
-            add_item("TEXT3", val)
-
-    # TEXT4 — list window
-    st.subheader("TEXT4")
-    st.write(st.session_state.list_items)
+    st.subheader("Uploads")
+    if st.session_state.list_items:
+        st.write(st.session_state.list_items)
+    else:
+        st.caption("No data uploaded yet...")
 
 with col2:
-    # Placeholder for the big black area
-    st.subheader("Main Area")
-    st.empty()
+    top_area = st.container(height="stretch", gap="large")
+    bottom_area = st.container()
+    
 
-# ---------- Bottom Bar ----------
-st.subheader("TEXT5")
-st.session_state.text5_value = st.text_input("Enter text", value=st.session_state.text5_value, key="text5")
+    with top_area:
+        # Middle chat window
+        st.subheader("Chat Area")
+        chat_window = st.container(gap="large")
+        with chat_window:
+            if st.session_state.chat_item:
+                for msg in st.session_state.chat_item:
+                    st.write(msg)
+            else:
+                st.caption("No messages yet. Type below to start chatting.")
 
-if st.button("TEXT6"):
-    add_item("TEXT5", st.session_state.text5_value)
-    st.session_state.text5_value = ""
+    with bottom_area:
+        # Bottom bar
+        leftcol, rightcol = st.columns([6,1],vertical_alignment="bottom")
+        
+        with leftcol:
+            st.subheader("ASK")
+            st.session_state.ask_value = st.text_input("Enter question here", value=st.session_state.ask_value, key="ask")
+        with rightcol:
+            if st.button("Send"):
+                add_chat("User", st.session_state.ask_value)
+                st.session_state.ask_value = ""
