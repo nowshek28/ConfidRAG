@@ -1,0 +1,37 @@
+Doc-ID: PR-02
+Title: SenseCam X — Industrial Camera Overview (rev 2025-07-18)
+
+Summary
+-------
+SenseCam X is a fictional high-speed, high-dynamic-range industrial camera
+designed for machine-vision inspection lines.
+
+Key Specifications
+   • Sensor: 1.1" CMOS, global shutter
+   • Resolution: 4096 × 3072 (12.6 MP)
+   • Max frame rate: 60 fps @ full resolution
+   • Interface: 10GigE (RJ-45), GenICam compatible
+   • Lens mount: C-mount; back focus adjustable
+   • Exposure: 10 μs to 30 ms
+   • Trigger: Hardware (TTL) and software; line debouncing supported
+   • HDR: 120 dB using dual-gain readout
+   • On-camera buffer: 2 GB for burst capture
+
+Environmental
+   • Operating temperature: 0–45 °C
+   • Ingress protection: IP40
+   • Power: PoE+ (25.5 W) or 12–24 VDC
+
+Software
+   • SDKs: C++, Python (Wheel), and REST bridge
+   • Supported OS: Ubuntu 22.04 LTS, Windows 11
+   • Example pipeline: capture → flat-field correction → demosaic →
+     color convert → inference → result overlay
+
+Warranty & Support
+   • Warranty: 24 months
+   • Support: support@acme-vision.example
+
+Quick Answers
+   Q: Does SenseCam X support hardware trigger?
+   A: Yes, TTL trigger with debouncing (see “Trigger”).

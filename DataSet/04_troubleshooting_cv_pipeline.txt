@@ -1,0 +1,32 @@
+Doc-ID: TS-04
+Title: Troubleshooting Guide — Computer Vision Pipeline
+
+Symptom: Blurry or out-of-focus images
+   • Check lens focus and aperture; target f/4–f/8 for depth of field.
+   • Verify exposure time; motion blur may occur above 5 ms at 60 fps.
+   • Ensure the mount is rigid; vibration introduces micro-blur.
+
+Symptom: Wrong colors or low contrast
+   • Validate white balance and color-space conversions (RGB ↔ BGR).
+   • Confirm flat-field correction files match the sensor and lighting.
+   • Inspect gamma; set gamma to 1.0 for training data capture.
+
+Symptom: GPU out-of-memory (OOM)
+   • Reduce batch size or input resolution.
+   • Use mixed precision (FP16) if model supports it.
+   • Monitor with `nvidia-smi`; free up memory from other processes.
+
+Symptom: Inference timeouts
+   • Profile pre/post-processing; they often dominate latency.
+   • Pin CPU threads and enable I/O prefetching.
+   • Warm up models on service start to fill kernel caches.
+
+Checklists
+   • Camera: exposure, gain, trigger mode, cable, NIC bandwidth.
+   • Lighting: flicker-free supply, sufficient lux, diffuser cleanliness.
+   • Software: version pins, checksum of calibration files, config diffs.
+
+Golden Rules
+   1) Change one variable at a time.
+   2) Keep a lab notebook of every change.
+   3) Roll back quickly when metrics regress.

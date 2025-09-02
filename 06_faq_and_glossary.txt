@@ -1,0 +1,21 @@
+Doc-ID: FG-06
+Title: FAQ & Glossary — Vision Systems
+
+FAQ
+   Q1: What are the standard working hours?
+       A1: 9:00–18:00 JST; core time is 10:00–16:00 JST.
+   Q2: How long can PII be retained?
+       A2: Up to 90 days unless an approved exception exists.
+   Q3: Does the camera support hardware trigger?
+       A3: Yes, SenseCam X supports TTL trigger with debouncing.
+   Q4: Can I use the REST API for inference?
+       A4: Yes, POST /infer with an asset_id and model name.
+
+Japanese Quick Answers（日本語）
+   Q: コアタイムはいつですか？
+   A: 10:00〜16:00（JST）です。
+
+Glossary
+   • HDR: High Dynamic Range imaging.
+   • Debouncing: Ignoring rapid, spurious trigger edges.
+   • Entropy: Measure of unpredictability in a signal.

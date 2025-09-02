@@ -1,0 +1,30 @@
+Doc-ID: RN-05
+Title: Research Notes — Gaze and Intent Prediction from Eye Movements
+
+Motivation
+   Understanding human intent from eye trajectories can improve AR/VR UX,
+   driver monitoring, and human-robot interaction.
+
+Key Concepts
+   • Fixation: gaze maintained within a degree threshold for ≥100 ms.
+   • Saccade: rapid eye movement between fixations.
+   • Smooth pursuit: continuous tracking of a moving target.
+
+Baseline Features
+   • Fixation duration statistics (μ, σ, 95th percentile).
+   • Saccade amplitude and peak velocity (main sequence).
+   • Scanpath entropy and transition matrices between AOIs.
+
+Modeling Ideas
+   • Temporal CNN or Transformer over (x, y, t) sequences.
+   • Multi-task loss: intent classification + next-fixation regression.
+   • Contrastive pretraining on unlabeled gaze sequences.
+
+Evaluation
+   • Metrics: accuracy (intent classes), MAE (gaze point), AUC (event detection).
+   • Protocol: subject-independent folds, report per-subject variance.
+
+Notes & To‑Dos
+   • Add synthetic noise to test robustness.
+   • Collect a small pilot dataset (n=12) with standardized prompts.
+   • Compare entropy-based features vs. deep representations.

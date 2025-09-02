@@ -1,0 +1,52 @@
+Doc-ID: CH-01
+Title: Acme Vision Labs — Company Handbook (v1.2, updated 2025-08-01)
+
+Overview
+--------
+This handbook summarizes how we work at Acme Vision Labs (AVL), a fictional
+computer-vision startup. It is designed to be searchable. Use it as a
+knowledge base for policies, definitions, and contacts.
+
+1) Working Hours & Core Time
+   • Standard hours: 9:00–18:00 JST (1 hour lunch).
+   • Core time: 10:00–16:00 JST for meetings and synchronous work.
+   • Remote work: Up to 3 days/week with manager approval.
+   • Public holidays follow the Japan calendar.
+
+2) Leave Policy
+   • Annual leave: 15 days/year; carry-over up to 5 days.
+   • Sick leave: Separate from annual leave; no doctor's note required for ≤2 days.
+   • Parenting leave: Up to 12 months; contact HR for details.
+   • To request leave, submit on the HR portal at least 3 business days in advance.
+
+3) Security & Compliance
+   • MFA is mandatory on all accounts.
+   • Store secrets in the approved vault, never in source control.
+   • Customer data must be anonymized before export.
+   • PII retention limit: 90 days unless an exception is filed.
+
+4) Data Handling
+   • Default classification: Internal.
+   • External sharing requires Legal review.
+   • Datasets larger than 5 GB should be stored in the Object Store.
+   • Backups run nightly; restoration window is 24–48 hours.
+
+5) Communication Guidelines
+   • Use project channels for decisions; summarize key decisions in writing.
+   • Meeting notes must list decisions (D) and action items (A).
+
+6) Support Contacts
+   • HR: hr@acme-vision.example
+   • IT: it@acme-vision.example
+   • Security: sec@acme-vision.example
+
+Glossary
+   • Core time: Hours when attendance is expected for collaboration.
+   • PII: Personally Identifiable Information.
+
+FAQ Snippets
+   Q: What are the core hours? 
+   A: 10:00–16:00 JST (see §1).
+
+   Q: How long can we retain PII?
+   A: 90 days unless an exception exists (see §3).

@@ -1,0 +1,37 @@
+Doc-ID: API-03
+Title: Vision Inference Service — REST API Reference (v0.9, 2025-06-30)
+
+Base URL
+   https://api.acme-vision.example/api/v1
+
+Authentication
+   • Bearer token in the Authorization header.
+
+Endpoints
+   1) POST /upload
+      Purpose: Upload an image or video frame.
+      Form fields:
+        - file: binary content
+        - metadata: optional JSON (string)
+      Response 201:
+        {"asset_id": "as_123", "bytes": 104857, "status": "stored"}
+      Errors: 413 (payload too large), 415 (unsupported type)
+
+   2) POST /infer
+      Purpose: Run a model on a stored asset.
+      JSON body:
+        {"asset_id": "as_123", "model": "defect-detector-v2", "params": {"threshold": 0.35}}
+      Response 200:
+        {"asset_id":"as_123","model":"defect-detector-v2","detections":[{"bbox":[12,45,92,120],"score":0.87,"label":"scratch"}]}
+      Errors: 404 (asset not found), 429 (rate limited), 500 (server)
+
+   3) GET /healthz
+      Purpose: Liveness probe.
+      Response 200: {"ok": true}
+
+Rate Limits
+   • Default: 60 requests/min per token.
+
+Example (curl)
+   curl -H "Authorization: Bearer $TOKEN" -F "file=@frame.png" \
+     -F "metadata={\"line\": \"A-12\"}" https://api.acme-vision.example/api/v1/upload
