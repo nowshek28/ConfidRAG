@@ -67,17 +67,3 @@ pip install -U "unstructured[all-docs]" lxml html5lib beautifulsoup4
 streamlit run UIWindow.py
 
 
-## 🧭 How to Use (UI Flow)
-
-- **Ingest 📥**
-- Enter a path or URL in the input box. Click “.txt file”, “.txt folder”, or “url upload”.
-- You’ll see document and chunk previews.
-- **Embed + Index 🧠➡️🗂️**
-- Click “Embed Chunks” (embeds new chunks for diagnostics) and indexes chunks into FAISS
-- (deduped by chunk_id).
-- **Ask ❓**
-- Type a question and click Send. The app embeds your question, retrieves Top-K (default 5),
-- and shows scored hits. Previews are hidden after Send for a cleaner chat area.
-- **Reset ♻️**
-- Click “Clear All” to wipe in-memory state and delete the FAISS index on disk.
-
