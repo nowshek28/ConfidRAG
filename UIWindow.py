@@ -7,6 +7,7 @@ from langchain_community.vectorstores import FAISS
 import faiss
 from langchain_community.docstore.in_memory import InMemoryDocstore
 import shutil
+import ollama_local 
 
 
 st.set_page_config(page_title="Nested Layout", layout="wide")
@@ -388,6 +389,7 @@ with col2:
                     add_chat("User", question)
                     with st.spinner("Searching knowledge base..."):
                         st.session_state.search_results = search_vectordb(question, k=st.session_state.search_k)
+                        Bot_answer = ollama_local.list_to_string_with_ollama(st.session_state.search_results, question)
                         add_chat("Bot", st.session_state.search_results)
                 else:
                     st.warning("Please enter a question.")
