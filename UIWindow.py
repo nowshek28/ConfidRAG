@@ -30,13 +30,13 @@ for k, v in {
     if k not in st.session_state:
         st.session_state[k] = v
 
-# Correct arg names (lowercase)
+
 text_splitter = RecursiveCharacterTextSplitter(
     chunk_size=1000,
     chunk_overlap=200,
 )
 
-MODEL_ID = "sentence-transformers/all-MiniLM-L6-v2"  # easy to swap later
+MODEL_ID = "sentence-transformers/all-MiniLM-L6-v2" 
 INDEX_ROOT = "./confidrag_index"
 
 # ---------- Functions ----------
@@ -58,7 +58,7 @@ def ingest_and_chunk(new_docs, source_tag=None):
     if not new_docs:
         return 0
 
-    # Optional provenance on raw docs (inherited by chunks)
+ 
     if source_tag:
         for d in new_docs:
             d.metadata = {**d.metadata, "source_tag": source_tag}
@@ -129,7 +129,6 @@ def get_vectordb(model_id: str = MODEL_ID) -> FAISS:
     index_dir = _model_dir(model_id)  
     os.makedirs(index_dir, exist_ok=True)
 
-    # Try to load a previously saved index
     try:
         return FAISS.load_local(
             index_dir,
@@ -164,7 +163,7 @@ def upsert_to_vectordb(chunks, model_id: str = MODEL_ID) -> int:
 
     # Dedup: avoid re-adding the same chunk IDs
     try:
-        existing_ids = set(vs.docstore._dict.keys())  # internal but fine for POC
+        existing_ids = set(vs.docstore._dict.keys()) 
     except Exception:
         existing_ids = set()
 
@@ -178,7 +177,7 @@ def upsert_to_vectordb(chunks, model_id: str = MODEL_ID) -> int:
     if not docs_to_add:
         return 0
 
-    vs.add_documents(docs_to_add, ids=ids_to_add)  # FAISS embeds internally with your HF embedder
+    vs.add_documents(docs_to_add, ids=ids_to_add) 
     persist_vectordb(vs, model_id)
     return len(docs_to_add)
 
@@ -195,7 +194,7 @@ def search_vectordb(query: str, k: int = 5):
         st.error(f"Vector DB not ready: {e}")
         return []
 
-    # If index is empty, bail early
+    
     try:
         if not getattr(vs, "docstore", None) or not getattr(vs.docstore, "_dict", {}):
             st.info("Index is empty. Ingest & index chunks first.")
@@ -221,7 +220,7 @@ def clear_vectordb(model_id: str = MODEL_ID):
         shutil.rmtree(dirpath)
     except FileNotFoundError:
         pass
-    # 3) (optional) re-bootstrap an empty index so future calls work immediately
+    # 3) re-bootstrap an empty index so future calls work immediately
     _ = get_vectordb(model_id)
 
 # ---------- LAYOUT ----------
@@ -275,7 +274,7 @@ with col1:
                 st.error(f"Failed to load folder: {e}")
         st.session_state.Input_value = ""
 
-    # URL upload (single URL)
+    # URL upload 
     if st.button("url upload"):
         url = add_item("url_upload", st.session_state.Input_value)
         if not url:
@@ -337,7 +336,7 @@ with col1:
         st.caption("No data uploaded yet...")
 
 with col2:
-    top_area = st.container()     # removed invalid args
+    top_area = st.container()   
     bottom_area = st.container()
 
     with top_area:
@@ -345,7 +344,7 @@ with col2:
         chat_window = st.container()
         with chat_window:
             if st.session_state.chat_item:
-                st.write(st.session_state.chat_item[-1::-2])  # reverse order
+                st.write(st.session_state.chat_item[-1::-2])  
             else:
                 st.caption("No messages yet. Type below to start chatting.")
 
