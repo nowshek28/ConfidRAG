@@ -1,0 +1,67 @@
+Optical networking is a means of communication that uses signals encoded in light to transmit information in various types of telecommunications networks. These include limited range local-area networks (LAN) or wide area networks (WANs), which cross metropolitan and regional areas as well as long-distance national, international and transoceanic networks. It is a form of optical communication that relies on optical amplifiers, lasers or LEDs and wavelength-division multiplexing (WDM) to transmit large quantities of data, generally across fiber-optic cables. Because it is capable of achieving extremely high bandwidth, it is an enabling technology for the Internet and telecommunication networks that transmit the vast majority of all human and machine-to-machine information.
+
+Types
+Fiber-optic networks
+Main article: Fiber-optic communication
+The most common fiber-optic networks are communication networks, mesh networks or ring networks commonly used in metropolitan, regional, national and international systems. Another variant of fiber-optic networks is the passive optical network, which uses unpowered optical splitters to link one fiber to multiple premises for last mile applications.
+
+Free-space optical networks
+Free-space optical networks use many of the same principles as a fiber-optic network but transmit their signals across open space without the use of fiber. Several planned satellite constellations such as SpaceX's Starlink intended for global internet provisioning will use wireless laser communication to establish optical mesh networks between satellites in outer space.[1] Airborne optical networks between high-altitude platforms are planned as part of Google's Project Loon and Facebook Aquila with the same technology.[2][3]
+
+Free-space optical networks can also be used to set up temporary terrestrial networks e.g. to link LANs on a campus.
+
+Components
+Components of a fiber-optical networking system include:
+
+Fiber. Multi-mode or single-mode.
+Laser or LED light source.
+Multiplexer/demultiplexer, also called mux/demux, filter, or prism. These can include Optical Add/Drop Multiplexer (OADM) and Reconfigurable Optical Add/Drop Multiplexer (ROADM).
+Optical switch, to direct light between ports without an optical-electrical-optical conversion
+Optical splitter, to send a signal down different fiber paths.
+Circulator, to tie in other components, such as an OADM.
+Optical amplifier.
+Wave division multiplexer.
+Transmission medium
+At its inception, the telecommunications network relied on copper to carry information. But the bandwidth of copper is limited by its physical characteristics—as the frequency of the signal increases to carry more data, more of the signal's energy is lost as heat. Additionally, electrical signals can interfere with each other when the wires are spaced too close together, a problem known as crosstalk. In 1940, the first communication system relied on coaxial cable that operated at 3 MHz and could carry 300 telephone conversations or one television channel. By 1975, the most advanced coaxial system had a bit rate of 274 Mbit/s, but such high-frequency systems require a repeater approximately every kilometer to strengthen the signal, making such a network expensive to operate.
+
+It was clear that light waves could have much higher bit rates without crosstalk. In 1957, Gordon Gould first described the design of the optical amplifier and the laser that was demonstrated in 1960 by Theodore Maiman. The laser is a source for light waves, but a medium was needed to carry the light through a network. In 1960, glass fibers were in use to transmit light into the body for medical imaging, but they had high optical loss—light was absorbed as it passed through the glass at a rate of 1 decibel per meter, a phenomenon known as attenuation. In 1964, Charles Kao showed that to transmit data for long distances, a glass fiber would need loss no greater than 20 dB per kilometer. A breakthrough came in 1970, when Donald B. Keck, Robert D. Maurer, and Peter C. Schultz of Corning Incorporated designed a glass fiber, made of fused silica, with a loss of only 16 dB/km. Their fiber was able to carry 65,000 times more information than copper.
+
+The first fiber-optic system for live telephone traffic was in 1977 in Long Beach, Calif., by General Telephone and Electronics, with a data rate of 6 Mbit/s. Early systems used infrared light at a wavelength of 800 nm, and could transmit at up to 45 Mbit/s with repeaters approximately 10 km apart. By the early 1980s, lasers and detectors that operated at 1300 nm, where the optical loss is 1 dB/km, had been introduced. By 1987, they were operating at 1.7 Gbit/s with repeater spacing of about 50 km.[4]
+
+Optical amplification
+The capacity of fiber optic networks has increased in part due to improvements in components, such as optical amplifiers and optical filters that can separate light waves into frequencies with less than 50 GHz difference, fitting more channels into a fiber. The erbium-doped optical amplifier (EDFA) was developed by David Payne at the University of Southampton in 1986 using atoms of the rare earth erbium that are distributed through a length of optical fiber. A pump laser excites the atoms, which emit light, thus boosting the optical signal. As the paradigm shift in network design proceeded, a broad range of amplifiers emerged because most optical communication systems used optical fiber amplifiers.[5] Erbium-doped amplifiers were the most commonly used means of supporting dense wavelength division multiplexing systems.[6] In fact, EDFAs were so prevalent that, as WDM became the technology of choice in the optical networks, the erbium amplifier became "the optical amplifier of choice for WDM applications."[7] Today, EDFAs and hybrid optical amplifiers are considered the most important components of wave division multiplexing systems and networks.[8]  
+
+Wavelength division multiplexing
+Using optical amplifiers, the capacity of fibers to carry information was dramatically increased with the introduction of wavelength-division multiplexing (WDM) in the early 1990s. AT&T's Bell Labs developed a WDM process in which a prism splits light into different wavelengths, which could travel through a fiber simultaneously. The peak wavelength of each beam is spaced far enough apart that the beams are distinguishable from each another, creating multiple channels within a single fiber. The earliest WDM systems had only two or four channels—AT&T, for example, deployed an oceanic 4-channel long-haul system in 1995.[9] The erbium-doped amplifiers on which they depend, however, did not amplify signals uniformly across their spectral gain region. During signal regeneration, slight discrepancies in various frequencies introduced an intolerable level of noise, making WDM with greater than 4 channels impractical for high-capacity fiber communications.
+
+To address this limitation, Optelecom, Inc. and General Instruments Corp. developed components to increase fiber bandwidth with far more channels. Optelecom and its head of Light Optics, engineer David Huber and Kevin Kimberlin co-founded Ciena Corp in 1992 to design and commercialize optical telecommunications systems, the objective being an expansion in the capacity of cable systems to 50,000 channels.[10][11] Ciena developed the dual-stage optical amplifier capable of transmitting data at uniform gain on multiple wavelengths, and with that, in June 1996, introduced the first commercial dense WDM system. That 16-channel system, with a total capacity of 40 Gbit/s,[12] was deployed on the Sprint network, the world's largest carrier of internet traffic at the time.[13] This first application of all-optical amplification in public networks[14] was seen by analysts as a harbinger of a permanent change in network design for which Sprint and Ciena would receive much of the credit.[15] Advanced optical communication experts cite the introduction of WDM as the real start of optical networking.[16]
+
+Capacity
+The density of light paths from WDM was the key to the massive expansion of fiber optic capacity that enabled the growth of the Internet in the 1990s. Since the 1990s, the channel count and capacity of dense WDM systems has increased substantially, with commercial systems able to transmit close to 1 Tbit/s of traffic at 100 Gbit/s on each wavelength.[17] In 2010, researchers at AT&T reported an experimental system with 640 channels operating at 107 Gbit/s, for a total transmission of 64 Tbit/s.[18] In 2018, Telstra of Australia deployed a live system that enables the transmission of 30.4 Tbit/s per fiber pair over 61.5 GHz spectrum, equal to 1.2 million 4K Ultra HD videos being streamed simultaneously.[19] As a result of this ability to transport large traffic volumes, WDM has become the common basis of nearly every global communication network and thus, a foundation of the Internet today.[20][21] Demand for bandwidth is driven primarily by Internet Protocol (IP) traffic from video services, telemedicine, social networking, mobile phone use and cloud-based computing. At the same time, machine-to-machine, IoT and scientific community traffic require support for the large-scale exchange of data files. According to the Cisco Visual Networking Index, global IP traffic will be more than 150,700 Gbits per second in 2022. Of that, video content will equal 82% of all IP traffic, all transmitted by optical networking.[22]
+
+Standards and protocols
+Synchronous optical networking (SONET) and synchronous digital hierarchy (SDH) have evolved as the most commonly used protocols for optical networks. The optical transport network (OTN) protocol was developed by the International Telecommunication Union as a successor and allows interoperability across the network as described by Recommendation G.709. Both protocols allow for delivery of a variety of protocols such as Asynchronous Transfer Mode (ATM), Ethernet, TCP/IP and others.
+
+References
+ "Elon Musk is about to launch the first of 11,925 proposed SpaceX internet satellites — more than all spacecraft that orbit Earth today". Business Insider. Retrieved 15 April 2018.
+ "Google Laser-Beams the Film Real Genius 60 Miles Between Balloons". WIRED. Retrieved 16 April 2018.
+ Newton, Casey (21 July 2016). "Inside the test flight of Facebook's first internet drone". TheVerge.com.
+ Argawal, G.P., Fiber-Optic Communications Systems, Fourth Edition, 2010, Wiley, Hoboken, NJ, ISBN 978-0-470-50511-3.
+ Dutta, Niloy, K. (2014). Fiber Amplifiers and Fiber Lasers. World Scientific. pp. vi.
+ Chadha, Devi (2019). Optical WDM Networks. p. 8.
+ Agrawal, Govind P. (2002). Fiber-Optic Communications Systems. John Wiley & Sons, Inc.
+ Nemova, Galina (2002). Optical Amplifier. p. 139.
+ Ramaswami, R., and Sivarajan, K., Optical Networks: A Practical Perspective, Second Edition, 2001, Elsevier, Philadelphia, PA, ISBN 0080513212, 9780080513218
+ Aurweek, Steve (May 17, 1993). ""Optelecom, HydraLite become partners"". The Baltimore Sun.
+ Hecht, Jeff. ""OSA Centennial Snapshots. Boom, Bubble, Bust: The Fiber Optic Mania". The Optical Society and Optics and Photonics News. October 2016.
+ Markoff, John (March 3, 1997). "Fiber-Optic Technology Draws Record Stock Value". New York Times.
+ Sprint (June 12, 1996). ""New Technology Allows 1600 Percent Capacity Boost"". PR Newswire. Kansas City, MO.
+ Gilder, George (December 4, 1995). ""Angst and Awe on the Internet"". Forbes ASAP.
+ Goldman Sachs (July 30, 1997). "Ciena Corporation: Breaking the Bandwidth Barrier". Technology: Telecom Equipment, US Research Report.
+ Cvijetic, Milorad and Djordjevic, Ivan B. (2013). Advanced Optical Communication Systems and Networks. Artech House.
+ Winzer, P.J. (April 2012). "Optical Networking Beyond WDM". IEEE Photonics Journal. 4 (2): 647–651. Bibcode:2012IPhoJ...4..647W. doi:10.1109/JPHOT.2012.2189379. S2CID 20600739.
+ Zhou, X., et al., “64-Tb/s (640×107-Gb/s) PDM-36QAM transmission over 320km using both pre- and post-transmission digital equalization,” 2010 Conference on Optical Fiber Communication/National Optical Fiber Engineers Conference, March 2010, San Diego, CA   
+ Rohan, Pierce (January 24, 2018). "A world-record speed achieved on Telstra's transmission network". Computer World.
+ Grobe, Klaus; Eiselt, Michael (2013). Wavelength Division Multiplexing: A Practical Engineering Guide. John T. Wiley & Sons. p. 2.
+ Cvijetic, M., and Djordjevic, I.B., Advanced Optical Communication Systems and Networks, 2013, Arctech House, Newton, MA, ISBN 978-1-60807-555-3
+ Cisco Visual Networking Index: Forecast and Methodology, 2013-2018, https://www.cisco.com/c/en/us/solutions/collateral/service-provider/visual-networking-index-vni/white-paper-c11-741490.html

@@ -1,0 +1,47 @@
+A spatial light modulator (SLM) is a device that can control the intensity, phase, or polarization of light in a spatially varying manner. A simple example is an overhead projector transparency. Usually when the term SLM is used, it means that the transparency can be controlled by a computer.
+
+SLMs are primarily marketed for image projection, displays devices,[1] and maskless lithography.[citation needed] SLMs are also used in optical computing and holographic optical tweezers.
+
+Usually, an SLM modulates the intensity of the light beam. However, it is also possible to produce devices that modulate the phase of the beam or both the intensity and the phase simultaneously. It is also possible to produce devices that modulate the polarization of the beam, and modulate the polarization, phase, and intensity simultaneously.[2]
+
+SLMs are used extensively in holographic data storage setups to encode information into a laser beam similarly to the way a transparency does for an overhead projector. They can also be used as part of a holographic display technology.
+
+In the 1980s, large SLMs were placed on overhead projectors to project computer monitor contents to the screen. Since then, more modern projectors have been developed where the SLM is built inside the projector. These are commonly used in meetings for presentations.
+
+Liquid crystal SLMs can help solve problems related to laser microparticle manipulation. In this case spiral beam parameters can be changed dynamically.[3]
+
+Electrically-addressed spatial light modulator (EASLM)
+As its name implies, the image on an electrically addressed spatial light modulator is created and changed electronically, as in most electronic displays. EASLMs usually receive input via a conventional interface such as VGA or DVI input. They are available at resolutions up to QXGA (2048 × 1536). Unlike ordinary displays, they are usually much smaller (having an active area of about 2 cm²) as they are not normally meant to be viewed directly. An example of an EASLM is the digital micromirror device (DMD) at the heart of DLP displays or LCoS Displays using ferroelectric liquid crystals (FLCoS) or nematic liquid crystals (electrically controlled birefringence effect).
+
+Spatial light modulators can be either reflective or transmissive depending on their design and purpose.[4]
+
+DMDs, short for digital micromirror devices, are spatial light modulators that specifically work with binary amplitude-only modulation.[5][6] Each pixel on the SLM can only be in one of two states: "on" or "off". The main purpose of the SLM is to control and adjust the amplitude of the light.
+
+Phase modulation can be achieved using a DMD by using Lee holography techniques, or by using the superpixel method.[7][6]
+
+Optically-addressed spatial light modulator (OASLM)
+The image on an optically addressed spatial light modulator, also known as a light valve, is created and changed by shining light encoded with an image on its front or back surface. A photosensor allows the OASLM to sense the brightness of each pixel and replicate the image using liquid crystals. As long as the OASLM is powered, the image is retained even after the light is extinguished. An electrical signal is used to clear the whole OASLM at once.
+
+They are often used as the second stage of a very-high-resolution display, such as one for a computer-generated holographic display. In a process called active tiling, images displayed on an EASLM are sequentially transferred to different parts on an OASLM, before the whole image on the OASLM is presented to the viewer. As EASLMs can run as fast as 2500 frames per second, it is possible to tile around 100 copies of the image on the EASLM onto an OASLM while still displaying full-motion video on the OASLM. This potentially gives images with resolutions of above 100 megapixels.
+
+Application in ultrafast pulse measuring and shaping
+Multiphoton intrapulse interference phase scan (MIIPS) is a technique based on the computer-controlled phase scan of a linear-array spatial light modulator. Through the phase scan to an ultrashort pulse, MIIPS can not only characterize but also manipulate the ultrashort pulse to get the needed pulse shape at target spot (such as transform-limited pulse for optimized peak power, and other specific pulse shapes). This technique features with full calibration and control of the ultrashort pulse, with no moving parts, and simple optical setup. Linear array SLMs that use nematic liquid crystal elements are available that can modulate amplitude, phase, or both simultaneously.[8][9]
+
+See also
+Active filters in femtosecond pulse shaping
+Photoelastic modulator
+Waveplate
+References
+Larry J. Hornbeck (TI), Digital Light Processing for High-Brightness, High-Resolution Applications, 21st century Archives [1]
+Coomber, Stuart D.; Cameron, Colin D.; Hughes, Jonathon R.; Sheerin, David T.; Slinger, Christopher W.; Smith, Mark A.; Stanley, Maurice (QinetiQ), "Optically addressed spatial light modulators for replaying computer-generated holograms", Proc. SPIE Vol. '4457', p. 9-19 (2001)
+Liquid Crystal Optically Addressed Spatial Light Modulator, [2]
+Slinger, C.; Cameron, C.; Stanley, M.; "Computer-Generated Holography as a Generic Display Technology", IEEE Computer, Volume 38, Issue 8, Aug. 2005, pp 46–53
+ Jullien, Aurélie (2020-03-01). "Spatial light modulators" (PDF). Photoniques. 101 (101): 59–64. Bibcode:2020Phot..101...59J. doi:10.1051/photon/202010159. ISSN 1629-4475.
+ Moreno, Ignacio; Davis, Jeffrey A.; Hernandez, Travis M; Cottrell, Don M.; Sand, David (2011-12-21). "Complete polarization control of light from a liquid crystal spatial light modulator". Optics Express. 20 (1): 364–376. doi:10.1364/oe.20.000364. ISSN 1094-4087. PMID 22274360.
+ Zinchik A.A. (2015). "Application of spatial light modulators for generation of laser beams with a spiral phase distribution". Scientific and Technical Journal of Information Technologies, Mechanics and Optics. 15 (5): 817–824. doi:10.17586/2226-1494-2015-15-5-817-824.
+ Harriman, Jamie; Serati, Steve; Stockley, Jay (2005-08-18). "Comparison of transmissive and reflective spatial light modulators for optical manipulation applications". In Dholakia, Kishan; Spalding, Gabriel C. (eds.). Optical Trapping and Optical Micromanipulation II. Vol. 5930. pp. 59302D. doi:10.1117/12.619283.
+ Hellman, Brandon; Takashima, Yuzuru (2019-07-16). "Angular and spatial light modulation by single digital micromirror device for multi-image output and nearly-doubled étendue". Optics Express. 27 (15): 21477–21496. Bibcode:2019OExpr..2721477H. doi:10.1364/oe.27.021477. hdl:10150/633995. ISSN 1094-4087. PMID 31510225.
+ "Setting up a DMD: Aberration effects - Wavefrontshaping.net". www.wavefrontshaping.net. Archived from the original on June 7, 2023. Retrieved 2024-02-10.
+ Goorden, Sebastianus A.; Bertolotti, Jacopo; Mosk, Allard P. (2014-07-17). "Superpixel-based spatial amplitude and phase modulation using a digital micromirror device". Optics Express. 22 (15): 17999–25909. arXiv:1405.3893. Bibcode:2014OExpr..2217999G. doi:10.1364/oe.22.017999. ISSN 1094-4087. PMID 25089419.
+ A.M. Weiner. "Femtosecond pulse shaping using spatial light modulators" (PDF). REVIEW OF SCIENTIFIC INSTRUMENTS VOLUME 71, NUMBER 5 MAY 2000. Retrieved 2010-07-06.
+ A.D. Chandra & A. Banerjee (2020). "Rapid phase calibration of a spatial light modulator using novel phase masks and optimization of its efficiency using an iterative algorithm". Journal of Modern Optics. 67 (7). Journal of Modern Optics, Volume 67, Issue 7, 18 May 2020: 628–637. arXiv:1811.03297. Bibcode:2020JMOp...67..628C. doi:10.1080/09500340.2020.1760954. S2CID 219646821.

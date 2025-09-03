@@ -24,8 +24,11 @@ for k, v in {
     "emb_store": {},
     "emb_dim":0,
     "Preview": True,
-    "search_k": 5,
+    "search_k": 3,
     "search_results": [],
+    "Sources": [],
+    "Chunkid": [],
+    "Scores": [],
 }.items():
     if k not in st.session_state:
         st.session_state[k] = v
@@ -344,7 +347,16 @@ with col2:
         chat_window = st.container()
         with chat_window:
             if st.session_state.chat_item:
-                st.write(st.session_state.chat_item[-1::-2])  
+                st.write(st.session_state.chat_item[-1])  
+                st.write("-----------------------------------------------------------------------------------")
+                st.write(st.session_state.chat_item[-2])
+                st.divider()
+                st.write("----------Sources----------")
+                st.write(st.session_state.Sources)
+                st.write("----------Chunk IDs----------")
+                st.write(st.session_state.Chunkid)
+                st.write("----------Scores----------")
+                st.write(st.session_state.Scores)
             else:
                 st.caption("No messages yet. Type below to start chatting.")
 
@@ -388,8 +400,13 @@ with col2:
                     add_chat("User", question)
                     with st.spinner("Searching knowledge base..."):
                         st.session_state.search_results = search_vectordb(question, k=st.session_state.search_k)
-                        Bot_answer = ollama_local.list_to_string_with_ollama(st.session_state.search_results, question)
-                        add_chat("Bot", st.session_state.search_results)
+                        Bot_answer, sources, Chunkid, Scores = ollama_local.list_to_string_with_ollama(st.session_state.search_results, question)
+                        st.session_state.Sources = sources
+                        st.session_state.Chunkid = Chunkid  
+                        st.session_state.Scores = Scores
+                        add_chat("Bot", Bot_answer)
+                        st.session_state.ask_value = ""
                 else:
                     st.warning("Please enter a question.")
-                st.session_state.ask_value = ""
+                
+                st.rerun()

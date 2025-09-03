@@ -1,0 +1,216 @@
+=== COMPANY CARD ===
+Company: Sony
+HQ: Tokyo
+Industry: Electronics; Entertainment; Semiconductors
+Summary: Sony operates gaming (PlayStation), music, pictures, consumer electronics, and CMOS image sensors.
+Products: PlayStation; Alpha cameras; BRAVIA TVs; CMOS image sensors
+Source: Wikipedia (public overview)
+
+=== COMPANY CARD ===
+Company: Canon
+HQ: Tokyo
+Industry: Optics & Imaging
+Summary: Canon builds optical and imaging gear across cameras, lenses, printers, medical, and semiconductor equipment.
+Products: EOS cameras; RF lenses; imageRUNNER printers; Ophthalmic systems; Lithography equipment
+Source: Wikipedia (public overview)
+
+=== COMPANY CARD ===
+Company: Toyota
+HQ: Toyota City, Aichi
+Industry: Automotive
+Summary: Global automaker with Toyota and Lexus brands; pioneer in hybrid systems (Prius) and fuel cell (Mirai).
+Products: Toyota & Lexus vehicles; Hybrid systems; Mirai fuel-cell
+Source: Wikipedia (public overview)
+
+=== COMPANY CARD ===
+Company: Panasonic
+HQ: Osaka
+Industry: Electronics; Energy; Housing; Automotive
+Summary: Panasonic builds consumer electronics and B2B solutions in energy, housing, and in-vehicle systems.
+Products: TVs; Appliances; Batteries/Energy; Automotive infotainment
+Source: Public company overview
+
+=== COMPANY CARD ===
+Company: Nikon
+HQ: Tokyo
+Industry: Optics & Imaging; Precision Equipment
+Summary: Nikon makes cameras, lenses, and industrial/semiconductor precision equipment; strong mirrorless lineup.
+Products: Z-series cameras; NIKKOR lenses; Precision/lithography equipment
+Source: Public company overview
+
+=== COMPANY CARD ===
+Company: Nintendo
+HQ: Kyoto
+Industry: Video Games & Entertainment
+Summary: Nintendo develops consoles and global franchises like Mario and The Legend of Zelda.
+Products: Nintendo Switch; Mario; The Legend of Zelda; Animal Crossing; Pokémon (with partners)
+Source: Public company overview
+
+=== COMPANY CARD ===
+Company: SoftBank Group
+HQ: Tokyo
+Industry: Investment Holdings; Telecom
+Summary: Investment holding company with Vision Funds and telecom via SoftBank Corp; stakes across global tech.
+Products: Vision Fund investments; SoftBank Corp services
+Source: Public company overview
+
+=== COMPANY CARD ===
+Company: Rakuten
+HQ: Tokyo
+Industry: E-commerce; Fintech; Mobile; Content
+Summary: Operates e-commerce, travel, content, and a broad fintech stack (card, bank, securities, insurance) plus mobile carrier.
+Products: Rakuten Ichiba; Rakuten Card/Bank/Securities; Rakuten Mobile; Viki; Kobo
+Source: Rakuten about page
+
+=== COMPANY CARD ===
+Company: Shiseido
+HQ: Tokyo
+Industry: Beauty & Personal Care
+Summary: Japan’s largest cosmetics company with global skincare, makeup, haircare, and fragrance brands.
+Products: Skincare; Makeup; Fragrance; Hair care
+Source: Public company overview
+
+=== COMPANY CARD ===
+Company: Uniqlo (Fast Retailing)
+HQ: Tokyo
+Industry: Apparel Retail
+Summary: Uniqlo focuses on functional basics (LifeWear) with tech fabrics and a global retail footprint.
+Products: HeatTech; AIRism; Ultra Light Down; LifeWear basics
+Source: Public company overview
+
+=== COMPANY CARD ===
+Company: MUJI (Ryohin Keikaku)
+HQ: Tokyo
+Industry: Lifestyle Retail
+Summary: Minimalist, no-logo lifestyle brand across apparel, furniture, homeware, and foods.
+Products: Apparel; Furniture; Home goods; Stationery; Foods
+Source: Public company overview
+
+=== COMPANY CARD ===
+Company: NTT (Nippon Telegraph and Telephone Corporation)
+HQ: Tokyo
+Industry: Telecommunications; ICT Services
+Summary: NTT is Japan’s largest telecom group, offering fixed-line, mobile, internet, and enterprise ICT solutions. Subsidiaries include NTT Docomo and NTT Data.
+Products: Mobile services (Docomo); Enterprise ICT (NTT Data); Fiber internet (FLET’S Hikari); Cloud & AI solutions
+Source: Public company overview
+
+=== COMPANY CARD ===
+Company: Hitachi
+HQ: Tokyo
+Industry: Conglomerate; IT Services; Infrastructure; Energy
+Summary: Hitachi operates across IT, OT, and products including energy systems, industrial equipment, smart infrastructure, and IT consulting.
+Products: Lumada IoT platform; Rail systems; Energy equipment; IT services; Construction machinery
+Source: Public company overview
+
+=== COMPANY CARD ===
+Company: Mitsubishi Heavy Industries (MHI)
+HQ: Tokyo
+Industry: Heavy Industry; Aerospace; Energy; Machinery
+Summary: MHI is a global engineering and manufacturing giant spanning aerospace, defense, power plants, shipbuilding, and industrial machinery.
+Products: Aircraft components; Gas turbines; Shipbuilding; Industrial machinery; Defense systems
+Source: Public company overview
+
+=== COMPANY CARD ===
+Company: ANA Holdings (All Nippon Airways)
+HQ: Tokyo
+Industry: Aviation; Transport
+Summary: ANA is Japan’s largest airline group, operating domestic and international flights, plus logistics, travel, and cargo services.
+Products: ANA passenger flights; ANA Cargo; ANA Mileage Club; Travel services
+Source: Public company overview
+
+=== COMPANY CARD ===
+Company: Japan Airlines (JAL)
+HQ: Tokyo
+Industry: Aviation; Transport
+Summary: Japan Airlines is one of Japan’s flagship carriers, offering passenger and cargo air transport, with global network partnerships.
+Products: JAL passenger flights; JAL Cargo; Mileage Bank; Global airline alliances
+Source: Public company overview
+
+=== COMPANY CARD ===
+Company: Seven & I Holdings
+HQ: Tokyo
+Industry: Retail; Convenience Stores; Supermarkets
+Summary: Seven & I is a major retail group best known for operating 7-Eleven convenience stores in Japan and globally, along with supermarkets and financial services.
+Products: 7-Eleven stores; Ito-Yokado supermarkets; Seven Bank; Denny’s Japan
+Source: Public company overview
+
+=== COMPANY CARD ===
+Company: Aeon Group
+HQ: Chiba
+Industry: Retail; Supermarkets; Shopping Malls
+Summary: Aeon is one of Japan’s largest retail groups, operating supermarkets, department stores, shopping malls, and specialty stores.
+Products: Aeon supermarkets; Aeon Mall; MaxValu; Daiei stores; Private brand Topvalu
+Source: Public company overview
+
+=== COMPANY CARD ===
+Company: Japan Post Holdings
+HQ: Tokyo
+Industry: Logistics; Postal; Financial Services
+Summary: Japan Post is a state-influenced conglomerate combining postal delivery, logistics, and major financial services (insurance and banking).
+Products: Postal delivery; Yu-Pack logistics; Japan Post Bank; Japan Post Insurance
+Source: Public company overview
+
+=== COMPANY CARD ===
+Company: Nomura Holdings
+HQ: Tokyo
+Industry: Financial Services; Investment Banking; Securities
+Summary: Nomura is Japan’s largest investment bank and securities firm, offering global trading, asset management, and advisory services.
+Products: Investment banking; Securities trading; Asset management; Wealth management
+Source: Public company overview
+
+=== COMPANY CARD ===
+Company: Daiichi Sankyo
+HQ: Tokyo
+Industry: Pharmaceuticals
+Summary: Daiichi Sankyo is a leading pharmaceutical company focusing on oncology, cardiovascular medicines, and vaccines, with a strong R&D pipeline.
+Products: Cancer therapeutics; Cardiovascular drugs; Vaccines; R&D pipeline assets
+Source: Public company overview
+
+=== COMPANY CARD ===
+Company: Hoya Corporation
+HQ: Tokyo
+Industry: Optics; Photonics; Healthcare
+Summary: Hoya produces optical products including eyeglass lenses, contact lenses, medical endoscopes, and photomasks for the semiconductor industry.
+Products: Eyeglass lenses; Contact lenses; Medical endoscopes; Semiconductor photomasks; Intraocular lenses
+Source: Public company overview
+
+=== COMPANY CARD ===
+Company: Olympus Corporation
+HQ: Tokyo
+Industry: Optics; Medical Imaging; Precision Instruments
+Summary: Olympus specializes in optical and digital imaging systems, with a strong focus on endoscopes and life science equipment.
+Products: Endoscopes; Microscopes; Medical imaging systems; Industrial inspection equipment
+Source: Public company overview
+
+=== COMPANY CARD ===
+Company: Hamamatsu Photonics
+HQ: Hamamatsu, Shizuoka
+Industry: Photonics; Optical Sensors; Scientific Instruments
+Summary: Hamamatsu Photonics develops optoelectronic devices and systems used in medical, industrial, and scientific research.
+Products: Photomultiplier tubes; Image sensors; Spectrometers; Light sources; Optical instruments
+Source: Public company overview
+
+=== COMPANY CARD ===
+Company: Nitto Denko Corporation
+HQ: Osaka
+Industry: Materials; Optoelectronics
+Summary: Nitto Denko produces a wide range of industrial materials, including polarizing films and optical films used in displays and electronics.
+Products: Polarizing films; Optical films for LCD/OLED; Adhesive materials; Industrial tapes
+Source: Public company overview
+
+=== COMPANY CARD ===
+Company: Topcon Corporation
+HQ: Tokyo
+Industry: Optics; Medical Devices; Surveying Instruments
+Summary: Topcon develops optical and optoelectronic equipment for eye care, precision agriculture, and surveying/measurement systems.
+Products: Ophthalmic diagnostic devices; GPS surveying instruments; 3D positioning systems
+Source: Public company overview
+
+=== COMPANY CARD ===
+Company: Tamron Co., Ltd.
+HQ: Saitama
+Industry: Optics; Imaging Lenses
+Summary: Tamron designs and manufactures precision optical products, particularly photographic and industrial lenses.
+Products: Camera lenses; CCTV lenses; Industrial/robotics optics; Automotive camera modules
+Source: Public company overview
+
