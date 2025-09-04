@@ -164,6 +164,7 @@ ConfidRAG/
 ├─ confidrag_index/      # FAISS indices (auto-created, per embedding model)
 └─ DataSet/              # (optional) example .txt files
 ```
+▶️ [Watch my video on LinkedIn](https://www.linkedin.com/posts/abhishek-ameta-2221a2194_rag-llm-ollama-activity-7369368091060817920-0wdk?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC2XBLoBeDLZMwwTV6FbrN52WZesMW9WYgE)
 
 ---
 
