@@ -305,6 +305,10 @@ with col1:
         st.session_state.emb_dim = 0 
         st.session_state.Preview = True
         st.session_state.search_results = []
+        st.session_state.Sources = []
+        st.session_state.Chunkid = []
+        st.session_state.Scores = []
+        st.session_state.ask_value = ""
         clear_vectordb(MODEL_ID)  
         st.success("Cleared all data.")
 
@@ -408,5 +412,5 @@ with col2:
                         st.session_state.ask_value = ""
                 else:
                     st.warning("Please enter a question.")
-                
+                st.session_state.ask_value = ""
                 st.rerun()
